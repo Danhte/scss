@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+$palette:(backgroundc: #fdd4e8, rosac: #d62d79, rosacc:#ffe9fa, blancoc: #ffffff);
+
+@mixin marandpad($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+
 *{
-    margin: 0;
-    padding: 0;
+    @include marandpad(0, 0);
     box-sizing: border-box;
 }
-$-bk-color: #fdd4e8;
-$-rosita: #d62d79;
-$-rosaclaro: rgb(255, 233, 250);
-$blanco: #ffffff;
+
+.ClassEjemploExtend {
+    background: map-get($palette, backgroundc);
+    color: map-get($palette, rosac);
+    padding: 10px 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0.5s;
+}
 
 body{
-    font-family: Questrial;
+    font-family: "Questrial";
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: $-bk-color;
+    background-color: map-get($palette, backgroundc);
     
     .login{
         height: 450px;
         width: 400px;
         border-radius: 15px;
-        background: $blanco;
+        background: map-get($palette, blancoc);
         display: flex;
         padding: 30px;
         justify-content: space-evenly;
@@ -50,7 +63,7 @@ body{
             
             h2{
                 font-size: 2em;
-                color: $-rosita;
+                color: map-get($palette, rosac);
             }
 
             .inputcaja{
@@ -59,36 +72,27 @@ body{
                 width: 100%;
 
                 p{
-                    color: $-rosita;
+                    color: map-get($palette, rosac);
                 }
 
                 input{
                     padding: 15px;
-                    background: $-rosaclaro;
+                    background: map-get($palette, rosacc);
                     width: 100%;
                     border: none;
                     margin: 5px 0;
                     outline: none;
                     border-radius: 5px;
-                    color: $-rosita;
+                    color: map-get($palette, backgroundc);
                     &::placeholder{
-                        color: $-rosita;
+                        color: map-get($palette, rosac);
                     }
                 }
             }
-            a{
-                background: $-bk-color;
-                color: $-rosita;
-                padding: 10px 45px;
-                border-radius: 5px;
-                text-decoration: none;
-                margin: 10px 0;
-                transition: 0.5s;
-                &:hover{
-                    letter-spacing: 2px;
-                    transform: translateY(-5px);
+
+            a {
+                @extend .ClassEjemploExtend;
                 }
             }
         }
     }
-}

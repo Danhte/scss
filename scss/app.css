@@ -5,8 +5,18 @@
   box-sizing: border-box;
 }
 
+.ClassEjemploExtend, body .login .textcaja a {
+  background: #fdd4e8;
+  color: #d62d79;
+  padding: 10px 45px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+
 body {
-  font-family: Questrial;
+  font-family: "Questrial";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,13 +67,13 @@ body .login .textcaja .inputcaja p {
 }
 body .login .textcaja .inputcaja input {
   padding: 15px;
-  background: rgb(255, 233, 250);
+  background: #ffe9fa;
   width: 100%;
   border: none;
   margin: 5px 0;
   outline: none;
   border-radius: 5px;
-  color: #d62d79;
+  color: #fdd4e8;
 }
 body .login .textcaja .inputcaja input::-moz-placeholder {
   color: #d62d79;
@@ -73,17 +83,4 @@ body .login .textcaja .inputcaja input:-ms-input-placeholder {
 }
 body .login .textcaja .inputcaja input::placeholder {
   color: #d62d79;
-}
-body .login .textcaja a {
-  background: #fdd4e8;
-  color: #d62d79;
-  padding: 10px 45px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 10px 0;
-  transition: 0.5s;
-}
-body .login .textcaja a:hover {
-  letter-spacing: 2px;
-  transform: translateY(-5px);
 }/*# sourceMappingURL=app.css.map */

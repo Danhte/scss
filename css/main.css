@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.ClassEjemploExtend, body .login .textcaja a {
+  background: #fdd4e8;
+  color: #d62d79;
+  padding: 10px 45px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.5s; }
+
+body {
+  font-family: "Questrial";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fdd4e8; }
+  body .login {
+    height: 450px;
+    width: 400px;
+    border-radius: 15px;
+    background: #ffffff;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    body .login .imgcaja {
+      height: 200px;
+      width: 360px;
+      margin-top: -130px; }
+      body .login .imgcaja img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    body .login .textcaja {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column; }
+      body .login .textcaja h2 {
+        font-size: 2em;
+        color: #d62d79; }
+      body .login .textcaja .inputcaja {
+        padding: 5px;
+        margin: 5px 0;
+        width: 100%; }
+        body .login .textcaja .inputcaja p {
+          color: #d62d79; }
+        body .login .textcaja .inputcaja input {
+          padding: 15px;
+          background: #ffe9fa;
+          width: 100%;
+          border: none;
+          margin: 5px 0;
+          outline: none;
+          border-radius: 5px;
+          color: #fdd4e8; }
+          body .login .textcaja .inputcaja input::placeholder {
+            color: #d62d79; }
